@@ -80,7 +80,7 @@ namespace RTT
             return false;
         }
 
-            virtual std::vector<std::string> getMemberNames() const {
+            virtual std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr) const {
                 // only discover the part names of this struct:
                 type_discovery in;
                 T t; // boost can't work without a value.

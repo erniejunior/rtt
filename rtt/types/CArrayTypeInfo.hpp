@@ -99,7 +99,7 @@ namespace RTT
                We make a shallow copy, so the size is automatically taken from the original expression the constant
                refers to. */
 
-            virtual std::vector<std::string> getMemberNames() const {
+            virtual std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr) const {
                 // only discover the parts of this struct:
                 std::vector<std::string> result;
                 result.push_back("size");

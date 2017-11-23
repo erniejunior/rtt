@@ -54,7 +54,7 @@ namespace RTT
             {
                 return SequenceTypeInfoBase<T>::decomposeType(source);
             }
-            virtual std::vector<std::string> getMemberNames() const {
+            virtual std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr) const {
                 return SequenceTypeInfoBase<T>::getMemberNames();
             }
 

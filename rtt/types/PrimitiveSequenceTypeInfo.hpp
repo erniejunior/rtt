@@ -62,8 +62,8 @@ namespace RTT
             {
                 return SequenceTypeInfoBase<T>::decomposeType(source);
             }
-            virtual std::vector<std::string> getMemberNames() const {
-                return SequenceTypeInfoBase<T>::getMemberNames();
+            virtual std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr item) const {
+                return SequenceTypeInfoBase<T>::getMemberNames(item);
             }
 
             virtual base::DataSourceBase::shared_ptr getMember(base::DataSourceBase::shared_ptr item, const std::string& name) const {

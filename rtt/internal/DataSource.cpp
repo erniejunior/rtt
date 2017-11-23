@@ -132,7 +132,7 @@ namespace RTT {
     }
 
     vector<string> DataSourceBase::getMemberNames() const {
-        return getTypeInfo()->getMemberNames();
+        return getTypeInfo()->getMemberNames(this);
     }
 
     DataSourceBase::shared_ptr DataSourceBase::getParent()  {

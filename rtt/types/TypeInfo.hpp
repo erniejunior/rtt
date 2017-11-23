@@ -320,9 +320,9 @@ namespace RTT
          * Returns the list of struct member names of this type.
          * In case this type is not a struct, returns an empty list.
          */
-        std::vector<std::string> getMemberNames() const
+        std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr item) const
         {
-            return mmembf ? mmembf->getMemberNames() : std::vector<std::string>();
+            return mmembf ? mmembf->getMemberNames(item) : std::vector<std::string>();
         }
 
         /**

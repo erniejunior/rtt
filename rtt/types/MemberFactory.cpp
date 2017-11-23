@@ -9,7 +9,7 @@ bool MemberFactory::resize(base::DataSourceBase::shared_ptr arg, int size) const
     return false;
 }
 
-    vector<string> MemberFactory::getMemberNames() const
+    vector<string> MemberFactory::getMemberNames(base::DataSourceBase::const_ptr) const
     {
         return vector<string>();
     }

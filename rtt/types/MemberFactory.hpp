@@ -30,8 +30,10 @@ namespace RTT
         /**
          * Returns the list of struct member names of this type.
          * In case this type is not a struct, returns an empty list.
+         * @param item The item for which to get the member names.
+         * Can be ignored most of the time, but some types might have different sets of members on a per item base
          */
-        virtual std::vector<std::string> getMemberNames() const;
+        virtual std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr item) const;
 
         /**
          * Returns a member of a given data source struct identified by its name.

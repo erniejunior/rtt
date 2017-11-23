@@ -88,7 +88,7 @@ namespace RTT
             return false;
         }
 
-            virtual std::vector<std::string> getMemberNames() const {
+            virtual std::vector<std::string> getMemberNames(base::DataSourceBase::const_ptr) const {
                 // only discover the parts of this struct:
                 std::vector<std::string> result;
                 result.push_back("size");
